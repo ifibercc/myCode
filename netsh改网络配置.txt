@@ -1,0 +1,17 @@
+
+动态
+netsh interface ip set address "WLAN" dhcp 	 //设置动态IP地址
+netsh interface ip set dns "WLAN"  source=dhcp 	 //设置动态DNS
+静态
+netsh interface ip set address "WLAN" static 10.16.15.226 255.255.255.0 10.16.15.1  //设置静态IP地址
+
+netsh interface ip set dns "WLAN" static 123.56.46.123		//设置静态DNS主地址
+netsh interface ip add dns "WLAN" 182.254.185.148 index=2 		//设置静态DNS备地址
+
+
+p.s.  将WLAN改为自己网卡的名字，在“命令提示符（管理员）”模式下运行即可，也可以将命令行做成.bat程序，双击运行即可。
+下面两个DNS可以访问google facebook Youtube等网站，无需GA或者翻墙。
+
+
+netsh interface ip set dns "以太网" static 123.56.46.123		//设置静态DNS主地址
+netsh interface ip add dns "以太网" 182.254.185.148 index=2 		//设置静态DNS备地址

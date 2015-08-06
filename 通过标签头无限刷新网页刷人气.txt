@@ -1,0 +1,6 @@
+<html>
+<head><meta http-equiv="refresh" content="0"></head>
+<frameset>
+<frame src="http://topsushe.itust.cn/View.asp?id=157" name="iframe">
+</frameset></frameset>
+</html>

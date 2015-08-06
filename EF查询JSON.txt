@@ -1,0 +1,9 @@
+            var db = new SunMvcDbEntities();
+            var json = db.blInfoes.Where(cc => cc.InfoGroup == type).Select(s => new
+                    {
+                        Id = s.Id,
+                        InfoGroup = s.InfoGroup,
+                        No = s.No,
+                        Name = s.Name,
+                    });            
+            return Json(json);
